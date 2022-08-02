@@ -2,7 +2,7 @@
 
 This is a portfolio website built using **Django 4**, **Next.js 12**, and **Material UI 5** that uses a **PostgreSQL** database to store data.
 
-![plot](https://github.com/mgrybel/BOB-VIDEO-14-Portfolio-Website/blob/master/frontend/public/images/main.png?raw=true)
+![plot](https://github.com/BobsProgrammingAcademy/portfolio-website-django-next.js/blob/master/frontend/public/images/main.png?raw=true)
 
 ## Prerequisites
 
