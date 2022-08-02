@@ -99,6 +99,7 @@ Next, declare environment variables in the **.env** file. Make sure you don't us
 
 ```bash
 SECRET_KEY=yoursecretkey
+DEBUG=TRUE
 DATABASE_NAME=portfolio
 DATABASE_USER=yourusername
 DATABASE_PASS=yourpassword
