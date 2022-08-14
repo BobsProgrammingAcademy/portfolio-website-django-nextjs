@@ -63,7 +63,7 @@ const Projects = () => {
             <Typography
               variant='h6'
               align='center'
-              color='text.secondary'
+              color={theme.palette.text.secondary}
               data-aos='fade-up'
               marginTop={3}
               marginBottom={3}
@@ -109,7 +109,10 @@ const Projects = () => {
                         {item.name}
                       </Typography>
                       <Box display='flex' alignItems='center' marginY={2}>
-                        <Typography variant='subtitle2' color='text.secondary'>
+                        <Typography 
+                          variant='subtitle2' 
+                          color={theme.palette.text.secondary}
+                        >
                           {item.description}
                         </Typography>
                       </Box>
