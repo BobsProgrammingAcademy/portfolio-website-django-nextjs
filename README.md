@@ -4,6 +4,15 @@ This is a portfolio website built using **Django 4**, **Next.js 12**, and **Mate
 
 ![plot](https://github.com/BobsProgrammingAcademy/portfolio-website-django-next.js/blob/master/frontend/public/images/main.png?raw=true)
 
+
+## Table of Contents 
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the application](#run-the-application)
+- [Adding data to the application](#add-data-to-the-application)
+- [Customizing the application](#customize-the-application)
+
+
 ## Prerequisites
 
 Install the following prerequisites:
