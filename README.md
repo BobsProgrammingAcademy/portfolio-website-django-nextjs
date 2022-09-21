@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This is a portfolio website built using **Django 4.0**, **Next.js 12**, and **Material UI 5** that uses a **PostgreSQL** database to store data.
+This is a portfolio website built using **Django 4.0.6**, **Next.js 12.2.3**, and **Material UI 5.9.3** that uses a **PostgreSQL** database to store data.
 
 ![plot](https://github.com/BobsProgrammingAcademy/portfolio-website-django-next.js/blob/master/frontend/public/images/main.png?raw=true)
 
