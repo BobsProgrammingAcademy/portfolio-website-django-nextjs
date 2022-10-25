@@ -29,9 +29,9 @@ const Header = ({ onSidebarOpen }) => {
   return (
     <>
       <AppBar
-        color='transparent'
         position='sticky'
         sx={{
+          backgroundColor: 'transparent',
           border: 0,
           padding: '10px 0',
           marginBottom: '20px',
