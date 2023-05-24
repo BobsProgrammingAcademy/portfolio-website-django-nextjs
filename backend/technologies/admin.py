@@ -8,4 +8,5 @@ class TechnologyAdmin(admin.ModelAdmin):
   search_fields = ('name', 'icon')
   list_per_page = 20
 
+
 admin.site.register(Technology, TechnologyAdmin)

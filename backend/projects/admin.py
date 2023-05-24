@@ -8,5 +8,6 @@ class ProjectAdmin(admin.ModelAdmin):
   search_fields = ('name', 'tags')
   list_per_page = 20
 
+
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(Tag)

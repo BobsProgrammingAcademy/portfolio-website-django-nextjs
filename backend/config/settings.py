@@ -1,6 +1,5 @@
 import os
 from decouple import config
-from pathlib import Path
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -81,7 +80,7 @@ DATABASES = {
     'USER': config('DATABASE_USER'),
     'PASSWORD': config('DATABASE_PASS'),
     'HOST': config('DATABASE_HOST'),
-    'PORT': '', # leave blank so the default port is selected
+    'PORT': '',  # leave blank so the default port is selected
   }
 }
 
@@ -136,4 +135,4 @@ CORS_ORIGIN_ALLOW_ALL = True
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
-FILE_UPLOAD_PERMISSIONS=0o640
+FILE_UPLOAD_PERMISSIONS = 0o640

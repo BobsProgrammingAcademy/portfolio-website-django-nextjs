@@ -6,10 +6,10 @@ from PIL import Image
 
 class Tag(models.Model):
   name = models.CharField(max_length=30)
-  
+
   def __str__(self):
     return self.name
-    
+
 
 class Project(models.Model):
   name = models.CharField(max_length=100)
@@ -18,13 +18,13 @@ class Project(models.Model):
   image = models.ImageField(upload_to='images')
   tags = models.ManyToManyField(Tag)
 
-  # override the save method and 
-  # use the Image class of the PIL package 
+  # override the save method and
+  # use the Image class of the PIL package
   # to convert it to JPEG
   def save(self, *args, **kwargs):
     if self.image:
       filename = "%s.jpg" % self.image.name.split('.')[0]
-      
+
       image = Image.open(self.image)
       # for PNG images discard the alpha channel and fill it with some color
       if image.mode in ('RGBA', 'LA'):
@@ -33,7 +33,7 @@ class Project(models.Model):
         image = background
         image_io = BytesIO()
         image.save(image_io, format='JPEG', quality=100)
-                
+
         # change the image field value to be the newly modified image value
         self.image.save(filename, ContentFile(image_io.getvalue()), save=False)
     super(Project, self).save(*args, **kwargs)

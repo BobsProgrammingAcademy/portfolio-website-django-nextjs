@@ -8,4 +8,5 @@ class AboutAdmin(admin.ModelAdmin):
   search_fields = ('title', 'icon')
   list_per_page = 20
 
+
 admin.site.register(About, AboutAdmin)

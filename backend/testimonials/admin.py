@@ -8,4 +8,5 @@ class TestimonialAdmin(admin.ModelAdmin):
   search_fields = ('author_name', 'author_title', 'author_photo')
   list_per_page = 20
 
+
 admin.site.register(Testimonial, TestimonialAdmin)
