@@ -25,11 +25,14 @@ jobs:
         pip install -r requirements.txt
     - name: Run migrations
       run: |
+        cd backend
         python manage.py makemigrations
         python manage.py migrate
     - name: Lint with flake8
       run: |
+        cd backend
         flake8
     - name: Run Tests
       run: |
+        cd backend
         python manage.py test
