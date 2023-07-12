@@ -14,26 +14,26 @@ axios.defaults.xsrfHeaderName = 'X-CSRFToken';
 
 const Hero = () => {
   const theme = useTheme();
-  const isMd = useMediaQuery(
-    theme.breakpoints.up('md'),
-    { defaultMatches: true }
-  );
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
 
   const [hero, setHero] = useState([]);
 
   const fetchHero = () => {
-    axios.get('/hero', {
-      headers: {
-        'Accept': 'application/json',
-        'Access-Control-Allow-Origin': process.env.BACKEND_URL,
-      }
-    })
-    .then(response => {
-      setHero(response.data);
-    })
-    .catch(err => console.log(err));
+    axios
+      .get('/hero', {
+        headers: {
+          Accept: 'application/json',
+          'Access-Control-Allow-Origin': process.env.BACKEND_URL,
+        },
+      })
+      .then((response) => {
+        setHero(response.data);
+      })
+      .catch((err) => console.log(err));
   };
-  
+
   useEffect(() => {
     fetchHero();
   }, []);
@@ -58,8 +58,7 @@ const Hero = () => {
                     component='span'
                     fontWeight={700}
                   >
-                    {item.title}
-                    {' '}
+                    {item.title}{' '}
                   </Typography>
                   <Typography
                     color={theme.palette.text.primary}
@@ -81,12 +80,12 @@ const Hero = () => {
                 <HeroButtons />
               </Box>
             </Grid>
-            <Grid 
+            <Grid
               item
-              container 
+              container
               alignItems='center'
               justifyContent='center'
-              xs={12} 
+              xs={12}
               md={6}
               sx={{ order: { xs: 1, md: 2 } }}
             >
@@ -102,7 +101,7 @@ const Hero = () => {
                   },
                 }}
               >
-                <Box 
+                <Box
                   component={LazyLoadImage}
                   src={item.image}
                   alt='Background Image'

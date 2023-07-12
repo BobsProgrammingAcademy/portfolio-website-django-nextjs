@@ -14,20 +14,21 @@ axios.defaults.xsrfHeaderName = 'X-CSRFToken';
 const About = () => {
   const theme = useTheme();
   const [about, setAbout] = useState([]);
-  
+
   const fetchAbout = () => {
-    axios.get('/about', {
-      headers: {
-        'Accept': 'application/json',
-        'Access-Control-Allow-Origin': process.env.BACKEND_URL,
-      }
-    })
-    .then(response => {
-      setAbout(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get('/about', {
+        headers: {
+          Accept: 'application/json',
+          'Access-Control-Allow-Origin': process.env.BACKEND_URL,
+        },
+      })
+      .then((response) => {
+        setAbout(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchAbout();
   }, []);
@@ -57,7 +58,8 @@ const About = () => {
             color={theme.palette.text.secondary}
             data-aos='fade-up'
           >
-            We help software developers learn new skills, gain more experience and create excellent applications
+            We help software developers learn new skills, gain more experience
+            and create excellent applications
           </Typography>
         </Box>
         <Grid container spacing={4}>
@@ -87,10 +89,7 @@ const About = () => {
                   data-aos-offset={100}
                   data-aos-duration={600}
                 >
-                  <Box 
-                    display='flex' 
-                    flexDirection='column'
-                  >
+                  <Box display='flex' flexDirection='column'>
                     <Box
                       component={Avatar}
                       variant='rounded'
@@ -100,9 +99,7 @@ const About = () => {
                       backgroundColor={alpha(theme.palette.primary.main, 0.2)}
                       color={theme.palette.primary.main}
                     >
-                      <Icon>
-                        {item.icon}
-                      </Icon>
+                      <Icon>{item.icon}</Icon>
                     </Box>
                     <Typography
                       variant='h6'

@@ -14,24 +14,25 @@ axios.defaults.xsrfHeaderName = 'X-CSRFToken';
 const Technologies = () => {
   const theme = useTheme();
   const [technologies, setTechnologies] = useState([]);
-  
+
   const fetchTechnologies = () => {
-    axios.get('/technologies', {
-      headers: {
-        'Accept': 'application/json',
-        'Access-Control-Allow-Origin': process.env.BACKEND_URL,
-      }
-    })
-    .then(response => {
-      setTechnologies(response.data);
-    })
-    .catch(err => console.log(err));
+    axios
+      .get('/technologies', {
+        headers: {
+          Accept: 'application/json',
+          'Access-Control-Allow-Origin': process.env.BACKEND_URL,
+        },
+      })
+      .then((response) => {
+        setTechnologies(response.data);
+      })
+      .catch((err) => console.log(err));
   };
-  
+
   useEffect(() => {
     fetchTechnologies();
   }, []);
-  
+
   return (
     <div id='technologies'>
       <Box
@@ -80,7 +81,7 @@ const Technologies = () => {
                   data-aos='fade-up'
                   data-aos-delay={100}
                   data-aos-offset={100}
-                  data-aos-duration={600}   
+                  data-aos-duration={600}
                 >
                   <CardContent
                     sx={{
@@ -105,7 +106,7 @@ const Technologies = () => {
                         image={item.icon}
                       />
                     </Box>
-                    <Typography 
+                    <Typography
                       align='center'
                       color={theme.palette.text.primary}
                       fontWeight='bold'

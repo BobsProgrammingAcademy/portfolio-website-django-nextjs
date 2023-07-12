@@ -19,22 +19,23 @@ const Contact = () => {
   const [contact, setContact] = useState([]);
 
   const fetchContact = () => {
-    axios.get('/contact', {
-      headers: {
-        'Accept': 'application/json',
-        'Access-Control-Allow-Origin': process.env.BACKEND_URL,
-      }
-    })
-    .then(response => {
-      setContact(response.data);
-    })
-    .catch(err => console.log(err));
+    axios
+      .get('/contact', {
+        headers: {
+          Accept: 'application/json',
+          'Access-Control-Allow-Origin': process.env.BACKEND_URL,
+        },
+      })
+      .then((response) => {
+        setContact(response.data);
+      })
+      .catch((err) => console.log(err));
   };
 
   useEffect(() => {
     fetchContact();
   }, []);
-  
+
   return (
     <div id='contact'>
       <Box position='relative'>
@@ -70,12 +71,12 @@ const Contact = () => {
             <Box key={index}>
               <Box marginBottom={4}>
                 <Grid container spacing={4}>
-                  <Grid 
+                  <Grid
                     item
-                    container 
+                    container
                     alignItems='center'
                     justifyContent='center'
-                    xs={12} 
+                    xs={12}
                     md={6}
                   >
                     <Box
@@ -88,7 +89,7 @@ const Contact = () => {
                         },
                       }}
                     >
-                      <Box 
+                      <Box
                         component={LazyLoadImage}
                         src='/images/office.jpg'
                         alt='Laptop'
@@ -121,8 +122,8 @@ const Contact = () => {
                             color: theme.palette.primary.main,
                             width: 25,
                             height: 25,
-                            marginRight: 1
-                          }} 
+                            marginRight: 1,
+                          }}
                         />
                         <ListItemText primary={item.phone} />
                       </Box>
@@ -134,13 +135,13 @@ const Contact = () => {
                         marginLeft={5}
                         marginBottom={2}
                       >
-                        <EmailIcon 
+                        <EmailIcon
                           sx={{
                             color: theme.palette.primary.main,
                             width: 25,
                             height: 25,
-                            marginRight: 1
-                          }}  
+                            marginRight: 1,
+                          }}
                         />
                         <ListItemText primary={item.email} />
                       </Box>
@@ -152,13 +153,13 @@ const Contact = () => {
                         marginLeft={5}
                         marginBottom={1}
                       >
-                        <LocationIcon 
+                        <LocationIcon
                           sx={{
                             color: theme.palette.primary.main,
                             width: 25,
                             height: 25,
-                            marginRight: 1
-                          }} 
+                            marginRight: 1,
+                          }}
                         />
                         <ListItemText primary={item.address} />
                       </Box>

@@ -25,7 +25,7 @@ import CustomButton from '../components/CustomButton';
 
 const Header = ({ onSidebarOpen }) => {
   const theme = useTheme();
-  
+
   return (
     <>
       <AppBar
@@ -36,28 +36,29 @@ const Header = ({ onSidebarOpen }) => {
           padding: '10px 0',
           marginBottom: '20px',
           top: 'auto',
-          boxShadow: '0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)'
+          boxShadow:
+            '0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)',
         }}
       >
         <Toolbar sx={{ minHeight: 70 }}>
           <Link href='/' sx={{ textDecoration: 'none' }}>
             <IconButton size='large' disabled>
-              <ImportantDevicesIcon 
-                sx={{ 
-                  color: theme.palette.primary.main, 
-                  height: 40, 
-                  width: 40 
-                }} 
+              <ImportantDevicesIcon
+                sx={{
+                  color: theme.palette.primary.main,
+                  height: 40,
+                  width: 40,
+                }}
               />
               <Box sx={{ display: { md: 'inline', xs: 'none' } }}>
-                <Typography 
-                  variant='h6' 
-                  sx={{ 
+                <Typography
+                  variant='h6'
+                  sx={{
                     flexGrow: 1,
                     color: theme.palette.primary.main,
                     fontWeight: 'bold',
                     textDecoration: 'none',
-                    marginLeft: '10px'
+                    marginLeft: '10px',
                   }}
                 >
                   Bob's Programming Academy
@@ -67,27 +68,19 @@ const Header = ({ onSidebarOpen }) => {
           </Link>
           <Box sx={{ flexGrow: 1 }} />
           <Box
-            sx={{ 
+            sx={{
               alignItems: 'center',
-              display: { lg: 'flex', md: 'none', xs: 'none' } 
+              display: { lg: 'flex', md: 'none', xs: 'none' },
             }}
           >
-            <CustomButton 
-              href='#home'
-              icon={<HomeIcon />}
-              text='Home'
-            />
-            <CustomButton 
-              href='#about'
-              icon={<InfoIcon />}
-              text='About'
-            />
-            <CustomButton 
+            <CustomButton href='#home' icon={<HomeIcon />} text='Home' />
+            <CustomButton href='#about' icon={<InfoIcon />} text='About' />
+            <CustomButton
               href='#projects'
               icon={<ListIcon />}
               text='Projects'
             />
-            <CustomButton 
+            <CustomButton
               href='#technologies'
               icon={<DevicesIcon />}
               text='Technologies'
@@ -97,45 +90,41 @@ const Header = ({ onSidebarOpen }) => {
               icon={<TextIcon />}
               text='Testimonials'
             />
-            <CustomButton 
-              href='#contact'
-              icon={<EmailIcon />}
-              text='Contact'
-            />
+            <CustomButton href='#contact' icon={<EmailIcon />} text='Contact' />
             <Divider
               orientation='vertical'
-              sx={{ 
-                height: 32, 
+              sx={{
+                height: 32,
                 mx: 2,
-                display: { lg: 'flex', md: 'none', xs: 'none' } 
-              }} 
+                display: { lg: 'flex', md: 'none', xs: 'none' },
+              }}
             />
             <Box sx={{ display: { lg: 'flex', md: 'none', xs: 'none' } }}>
-              <IconButton 
-                aria-label='LinkedIn' 
+              <IconButton
+                aria-label='LinkedIn'
                 href='#'
                 target='_blank'
-                sx={{ 
+                sx={{
                   color: theme.palette.primary.main,
                 }}
               >
                 <LinkedInIcon fontSize='large' />
               </IconButton>
-              <IconButton 
-                aria-label='Instagram' 
+              <IconButton
+                aria-label='Instagram'
                 href='#'
                 target='_blank'
-                sx={{ 
+                sx={{
                   color: theme.palette.primary.main,
                 }}
               >
                 <InstagramIcon fontSize='large' />
               </IconButton>
-              <IconButton 
-                aria-label='GitHub' 
+              <IconButton
+                aria-label='GitHub'
                 href='#'
                 target='_blank'
-                sx={{ 
+                sx={{
                   color: theme.palette.primary.main,
                 }}
               >
@@ -143,10 +132,10 @@ const Header = ({ onSidebarOpen }) => {
               </IconButton>
             </Box>
           </Box>
-          <Box 
-            sx={{ 
-              display: { md: 'block', lg: 'none' } 
-            }} 
+          <Box
+            sx={{
+              display: { md: 'block', lg: 'none' },
+            }}
             alignItems='center'
           >
             <Button
@@ -157,7 +146,7 @@ const Header = ({ onSidebarOpen }) => {
                 borderRadius: 2,
                 minWidth: 'auto',
                 padding: 1,
-                borderColor: alpha(theme.palette.divider, 0.2)
+                borderColor: alpha(theme.palette.divider, 0.2),
               }}
             >
               <MenuIcon />

@@ -11,24 +11,25 @@ axios.defaults.xsrfHeaderName = 'X-CSRFToken';
 const Footer = () => {
   const theme = useTheme();
   const [footer, setFooter] = useState([]);
-  
+
   const fetchFooter = () => {
-    axios.get('/footer', {
-      headers: {
-        'Accept': 'application/json',
-        'Access-Control-Allow-Origin': process.env.BACKEND_URL,
-      }
-    })
-    .then(response => {
-      setFooter(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get('/footer', {
+        headers: {
+          Accept: 'application/json',
+          'Access-Control-Allow-Origin': process.env.BACKEND_URL,
+        },
+      })
+      .then((response) => {
+        setFooter(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchFooter();
   }, []);
-  
+
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>

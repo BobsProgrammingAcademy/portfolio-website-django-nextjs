@@ -22,7 +22,7 @@ import CustomButton from '../components/CustomButton';
 
 const Sidebar = ({ open, onClose }) => {
   const theme = useTheme();
-  
+
   return (
     <>
       <Drawer
@@ -33,25 +33,22 @@ const Sidebar = ({ open, onClose }) => {
         PaperProps={{
           sx: {
             backgroundColor: theme.palette.background.default,
-            width: 256
-          }
+            width: 256,
+          },
         }}
       >
-        <Box
-          height='100%'
-          padding={2}
-        >
+        <Box height='100%' padding={2}>
           <Box width={1} paddingY={1}>
             <Link href='/' sx={{ textDecoration: 'none' }}>
               <IconButton size='large' disabled>
-                <ImportantDevicesIcon 
-                  sx={{ 
-                    color: theme.palette.primary.main, 
-                    height: 30, 
-                    width: 30 
-                  }} 
+                <ImportantDevicesIcon
+                  sx={{
+                    color: theme.palette.primary.main,
+                    height: 30,
+                    width: 30,
+                  }}
                 />
-                <Typography 
+                <Typography
                   variant='h6'
                   color={theme.palette.primary.main}
                   flexGrow={1}
@@ -65,27 +62,19 @@ const Sidebar = ({ open, onClose }) => {
             </Link>
           </Box>
           <Box paddingY={2}>
-            <CustomButton 
-              href='#home'
-              icon={<HomeIcon />}
-              text='Home'
-            />
+            <CustomButton href='#home' icon={<HomeIcon />} text='Home' />
             <Box paddingY={1}>
-              <CustomButton 
-                href='#about'
-                icon={<InfoIcon />}
-                text='About'
-              />
+              <CustomButton href='#about' icon={<InfoIcon />} text='About' />
             </Box>
             <Box paddingY={1}>
-              <CustomButton 
+              <CustomButton
                 href='#projects'
                 icon={<ListIcon />}
                 text='Projects'
               />
             </Box>
             <Box paddingY={1}>
-              <CustomButton 
+              <CustomButton
                 href='#technologies'
                 icon={<DevicesIcon />}
                 text='Technologies'
@@ -99,7 +88,7 @@ const Sidebar = ({ open, onClose }) => {
               />
             </Box>
             <Box paddingY={1}>
-              <CustomButton 
+              <CustomButton
                 href='#contact'
                 icon={<EmailIcon />}
                 text='Contact'
@@ -107,31 +96,31 @@ const Sidebar = ({ open, onClose }) => {
             </Box>
             <Box>
               <Stack direction='row' spacing={1}>
-                <IconButton 
-                  aria-label='LinkedIn' 
+                <IconButton
+                  aria-label='LinkedIn'
                   href='#'
                   target='_blank'
-                  sx={{ 
+                  sx={{
                     color: theme.palette.primary.main,
                   }}
                 >
                   <LinkedInIcon fontSize='large' />
                 </IconButton>
-                <IconButton 
-                  aria-label='Instagram' 
+                <IconButton
+                  aria-label='Instagram'
                   href='#'
                   target='_blank'
-                  sx={{ 
+                  sx={{
                     color: theme.palette.primary.main,
                   }}
                 >
                   <InstagramIcon fontSize='large' />
                 </IconButton>
-                <IconButton 
-                  aria-label='GitHub' 
+                <IconButton
+                  aria-label='GitHub'
                   href='#'
                   target='_blank'
-                  sx={{ 
+                  sx={{
                     color: theme.palette.primary.main,
                   }}
                 >

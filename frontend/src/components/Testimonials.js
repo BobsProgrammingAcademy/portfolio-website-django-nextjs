@@ -17,24 +17,25 @@ axios.defaults.xsrfHeaderName = 'X-CSRFToken';
 const Testimonials = () => {
   const theme = useTheme();
   const [testimonials, setTestimonials] = useState([]);
-  
+
   const fetchTestimonials = () => {
-    axios.get('/testimonials', {
-      headers: {
-        'Accept': 'application/json',
-        'Access-Control-Allow-Origin': process.env.BACKEND_URL,
-      }
-    })
-    .then(response => {
-      setTestimonials(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get('/testimonials', {
+        headers: {
+          Accept: 'application/json',
+          'Access-Control-Allow-Origin': process.env.BACKEND_URL,
+        },
+      })
+      .then((response) => {
+        setTestimonials(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchTestimonials();
   }, []);
-  
+
   return (
     <div id='testimonials'>
       <Box
@@ -92,11 +93,8 @@ const Testimonials = () => {
                   data-aos-duration={600}
                   variant='outlined'
                 >
-                  <Box 
-                    display='flex' 
-                    flexDirection='column'
-                  >
-                    <Box 
+                  <Box display='flex' flexDirection='column'>
+                    <Box
                       component={Avatar}
                       width={50}
                       height={50}
@@ -104,23 +102,23 @@ const Testimonials = () => {
                       backgroundColor={theme.palette.primary.main}
                       color={theme.palette.background.paper}
                     >
-                      <TextIcon 
-                        sx={{ 
+                      <TextIcon
+                        sx={{
                           color: theme.palette.common.white,
-                          height: 25, 
-                          width: 25
-                        }} 
+                          height: 25,
+                          width: 25,
+                        }}
                       />
                     </Box>
-                    <Typography 
+                    <Typography
                       color={theme.palette.text.secondary}
                       gutterBottom
                     >
                       {item.testimonial}
                     </Typography>
-                    <ListItem 
-                      component='div' 
-                      disableGutters 
+                    <ListItem
+                      component='div'
+                      disableGutters
                       sx={{ padding: 0, marginTop: 1 }}
                     >
                       <ListItemAvatar>
@@ -148,7 +146,7 @@ const Testimonials = () => {
                           </Typography>
                         }
                       />
-                    </ListItem>                 
+                    </ListItem>
                   </Box>
                 </Box>
               </Box>

@@ -17,20 +17,21 @@ axios.defaults.xsrfHeaderName = 'X-CSRFToken';
 const Projects = () => {
   const theme = useTheme();
   const [projects, setProjects] = useState([]);
-  
+
   const fetchProjects = () => {
-    axios.get('/projects', {
-      headers: {
-        'Accept': 'application/json',
-        'Access-Control-Allow-Origin': process.env.BACKEND_URL,
-      }
-    })
-    .then(response => {
-      setProjects(response.data);
-    })
-    .catch(err => console.log(err));
+    axios
+      .get('/projects', {
+        headers: {
+          Accept: 'application/json',
+          'Access-Control-Allow-Origin': process.env.BACKEND_URL,
+        },
+      })
+      .then((response) => {
+        setProjects(response.data);
+      })
+      .catch((err) => console.log(err));
   };
-  
+
   useEffect(() => {
     fetchProjects();
   }, []);
@@ -109,8 +110,8 @@ const Projects = () => {
                         {item.name}
                       </Typography>
                       <Box display='flex' alignItems='center' marginY={2}>
-                        <Typography 
-                          variant='subtitle2' 
+                        <Typography
+                          variant='subtitle2'
                           color={theme.palette.text.secondary}
                         >
                           {item.description}
@@ -124,14 +125,15 @@ const Projects = () => {
                             variant='outlined'
                             size='small'
                             color='primary'
-                            sx={{ 
-                              marginBottom: 1, 
+                            sx={{
+                              marginBottom: 1,
                               marginRight: 1,
                               '&:hover': {
                                 backgroundColor: theme.palette.primary.main,
                                 color: theme.palette.common.white,
-                                border: '1px solid ' + theme.palette.primary.main
-                              }
+                                border:
+                                  '1px solid ' + theme.palette.primary.main,
+                              },
                             }}
                           />
                         ))}
