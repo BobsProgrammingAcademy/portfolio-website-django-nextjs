@@ -81,7 +81,7 @@ const Layout = ({ children }) => {
                 '&:hover': {
                   backgroundColor: 'transparent',
                   color: theme.palette.primary.main,
-                  border: '2px solid' + theme.palette.primary.main,
+                  border: `2px solid ${theme.palette.primary.main}`,
                 },
               }}
             >
