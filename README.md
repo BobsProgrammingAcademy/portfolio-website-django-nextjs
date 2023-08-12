@@ -14,7 +14,7 @@ This is a portfolio website built using **Django 4**, **Django REST Framework 3*
 - [Copyright and License](#copyright-and-license)
 
 
-## Prerequisites
+### Prerequisites
 
 Install the following prerequisites:
 
@@ -23,9 +23,9 @@ Install the following prerequisites:
 3. [PostgreSQL 14.4](https://www.postgresql.org/download/)
 4. [Visual Studio Code](https://code.visualstudio.com/download)
 
-## Installation
+### Installation
 
-### Backend
+#### Backend
 
 #### 1. Create a virtual environment
 
@@ -138,7 +138,7 @@ python manage.py createsuperuser
 
 When prompted, enter a username, email, and password.
 
-### Frontend
+#### Frontend
 
 #### 1. Install required frontend dependencies
 
@@ -168,7 +168,7 @@ BACKEND_HOST=127.0.0.1
 BACKEND_URL=http://127.0.0.1:8000
 ```
 
-## Run the application
+### Run the application
 
 To run the application, you need to have both the backend and the frontend up and running.
 
@@ -192,19 +192,17 @@ npm run dev
 
 Go to http://localhost:3000/ to view the application.
 
-
-## Add data to the application
+### Add data to the application
 
 Add data through Django Admin.
 
 Go to http://127.0.0.1:8000/admin to access the Django Admin interface and sign in using the admin credentials.
 
-
-## Customize the application
+### Customize the application
 
 This section describes how to customize the application. 
 
-### Changing Section Titles and Subtitles 
+#### Changing Section Titles and Subtitles 
 
 #### 1. About
 
@@ -226,23 +224,22 @@ To modify the title and subtitle of the **Testimonials** section, make changes i
 
 To modify the title and subtitle of the **Contact** section, make changes in the ```frontend/src/components/Contact.js``` file.
 
-### Changing Colors
+#### Changing Colors
 
 To modify the colors in the application, make changes in the ```frontend/src/theme/theme.js``` file.
 
-### Changing Fonts
+#### Changing Fonts
 
 To modify the fonts in the application, first, add a new font to the ```frontend/src/pages/_document.js``` file, and then make changes in the ```frontend/src/theme/typography.js``` file.
 
-### Changing Logo
+#### Changing Logo
 
 To modify the logo in the application, make changes in the ```frontend/src/layout/Header.js``` and ```frontend/src/layout/Sidebar.js``` files.
 
-### Changing Buttons in the Hero Section
+#### Changing Buttons in the Hero Section
 
 To modify the two buttons in the Hero section, make changes in the ```frontend/src/components/HeroButtons.js``` file.
 
-
-## Copyright and License
+### Copyright and License
 
 Copyright © 2022 Bob's Programming Academy. Code released under the MIT license.
