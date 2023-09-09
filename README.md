@@ -19,8 +19,8 @@ Install the following prerequisites:
 
 1. [Python 3.8-3.11](https://www.python.org/downloads/)
 <br> This project uses **Django v4.2.4**. For Django to work, you must have a correct Python version installed on your machine. More information [here](https://django.readthedocs.io/en/stable/faq/install.html).
-2. [Node.js 18.6.0](https://nodejs.org/en/)
-3. [PostgreSQL 14.4](https://www.postgresql.org/download/)
+2. [Node.js](https://nodejs.org/en/)
+3. [PostgreSQL](https://www.postgresql.org/download/)
 4. [Visual Studio Code](https://code.visualstudio.com/download)
 
 ### Installation
