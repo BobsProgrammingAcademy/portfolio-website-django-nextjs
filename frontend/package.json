@@ -2,14 +2,14 @@
   "name": "portfolio-website",
   "version": "1.0.0",
   "description": "Portfolio Website",
+  "author": "MG",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "author": "MG",
-  "license": "MIT",
   "dependencies": {
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.1",
@@ -24,5 +24,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lazy-load-image-component": "^1.6.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
   }
 }
