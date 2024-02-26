@@ -8,10 +8,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "prettier": "prettier \"**/*.+(json|js|jsx)\"",
     "format:check": "npm run prettier -- --check",
-    "format:fix": "npm run prettier -- --write"
+    "format:fix": "npm run prettier -- --write",
+    "lint": "eslint --ext .js,.jsx ./src --no-error-on-unmatched-pattern",
+    "lint:fix": "eslint --ext .js,.jsx ./src --no-error-on-unmatched-pattern --fix"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "npm run lint",
+      "npm run format:check"
+    ]
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",
