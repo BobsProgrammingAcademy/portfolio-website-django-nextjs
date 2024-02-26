@@ -7,11 +7,15 @@
 # next.js
 /.next
 /out
+**/next.config.js
 
 # production
 /build
 
 
 # others
-/code-stages
+# /code-stages
 /scripts
+
+*.html
+*.css
