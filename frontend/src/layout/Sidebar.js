@@ -56,7 +56,7 @@ const Sidebar = ({ open, onClose }) => {
                   textDecoration='none'
                   marginLeft='10px'
                 >
-                  Bob's Programming Academy
+                  Bob&apos;s Programming Academy
                 </Typography>
               </IconButton>
             </Link>

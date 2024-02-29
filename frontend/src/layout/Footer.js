@@ -34,7 +34,7 @@ const Footer = () => {
     <Grid container spacing={2}>
       <Grid item xs={12}>
         {footer.slice(0, 1).map((item, index) => (
-          <Box sx={{ marginBottom: '20px', textAlign: 'center' }}>
+          <Box key={index} sx={{ marginBottom: '20px', textAlign: 'center' }}>
             <Typography
               align='center'
               variant='subtitle2'

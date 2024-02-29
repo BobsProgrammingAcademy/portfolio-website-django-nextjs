@@ -61,7 +61,7 @@ const Header = ({ onSidebarOpen }) => {
                     marginLeft: '10px',
                   }}
                 >
-                  Bob's Programming Academy
+                  Bob&apos;s Programming Academy
                 </Typography>
               </Box>
             </IconButton>
