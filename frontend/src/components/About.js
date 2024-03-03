@@ -46,9 +46,9 @@ const About = () => {
           <Typography
             variant='h4'
             align='center'
-            data-aos='fade-up'
             fontWeight={700}
             gutterBottom
+            data-aos='fade-up'
           >
             About us
           </Typography>
