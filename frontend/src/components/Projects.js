@@ -55,9 +55,9 @@ const Projects = () => {
             <Typography
               variant='h4'
               align='center'
-              data-aos='fade-up'
               fontWeight={700}
               gutterBottom
+              data-aos='fade-up'
             >
               Projects
             </Typography>
@@ -65,9 +65,9 @@ const Projects = () => {
               variant='h6'
               align='center'
               color={theme.palette.text.secondary}
-              data-aos='fade-up'
               marginTop={3}
               marginBottom={3}
+              data-aos='fade-up'
             >
               View some of our latest projects
             </Typography>
