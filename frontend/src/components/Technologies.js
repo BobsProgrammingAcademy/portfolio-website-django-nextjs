@@ -49,8 +49,8 @@ const Technologies = () => {
               align='center'
               fontWeight={700}
               marginTop={theme.spacing(1)}
-              data-aos='fade-up'
               gutterBottom
+              data-aos='fade-up'
             >
               Technologies
             </Typography>
@@ -58,9 +58,9 @@ const Technologies = () => {
               variant='h6'
               align='center'
               color={theme.palette.text.secondary}
-              data-aos='fade-up'
               marginTop={3}
               marginBottom={3}
+              data-aos='fade-up'
             >
               Technologies we use to build web applications
             </Typography>
