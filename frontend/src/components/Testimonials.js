@@ -50,8 +50,8 @@ const Testimonials = () => {
             variant='h4'
             align='center'
             fontWeight={700}
-            data-aos='fade-up'
             gutterBottom
+            data-aos='fade-up'
           >
             Testimonials
           </Typography>
@@ -59,9 +59,9 @@ const Testimonials = () => {
             variant='h6'
             color={theme.palette.text.secondary}
             align='center'
-            data-aos='fade-up'
             marginTop={3}
             marginBottom={3}
+            data-aos='fade-up'
           >
             Check what clients have said about our work
           </Typography>
@@ -87,11 +87,11 @@ const Testimonials = () => {
                   borderRadius={2}
                   width={1}
                   height={1}
+                  variant='outlined'
                   data-aos='fade-up'
                   data-aos-delay={i * 100}
                   data-aos-offset={100}
                   data-aos-duration={600}
-                  variant='outlined'
                 >
                   <Box display='flex' flexDirection='column'>
                     <Box
