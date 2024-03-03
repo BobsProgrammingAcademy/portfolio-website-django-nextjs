@@ -14,7 +14,7 @@ const CustomButton = ({ href, icon, text }) => {
       startIcon={icon}
       sx={{
         color: theme.palette.text.primary,
-        mx: 1.5,
+        marginX: 1.5,
         marginLeft: '15px',
         '&:active': {
           color: theme.palette.primary.main,
