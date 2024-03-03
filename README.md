@@ -4,7 +4,6 @@ This is a portfolio website built using **Django 4**, **Django REST Framework 3*
 
 ![plot](https://github.com/BobsProgrammingAcademy/portfolio-website-django-next.js/blob/master/frontend/public/images/main.png?raw=true)
 
-
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
@@ -15,17 +14,15 @@ This is a portfolio website built using **Django 4**, **Django REST Framework 3*
 - [Customizing the application](#customize-the-application)
 - [Copyright and License](#copyright-and-license)
 
-
 ### Prerequisites
 
 Install the following prerequisites:
 
 1. [Python 3.8-3.11](https://www.python.org/downloads/)
-<br> This project uses **Django v4.2.4**. For Django to work, you must install a correct version of Python on your machine. More information [here](https://django.readthedocs.io/en/stable/faq/install.html).
+   <br> This project uses **Django v4.2.4**. For Django to work, you must install a correct version of Python on your machine. More information [here](https://django.readthedocs.io/en/stable/faq/install.html).
 2. [Node.js](https://nodejs.org/en/)
 3. [PostgreSQL](https://www.postgresql.org/download/)
 4. [Visual Studio Code](https://code.visualstudio.com/download)
-
 
 ### Installation
 
@@ -174,7 +171,6 @@ BACKEND_HOST=127.0.0.1
 BACKEND_URL=http://127.0.0.1:8000
 ```
 
-
 ### Run the application
 
 To run the application, you need to have both the backend and the frontend up and running.
@@ -199,7 +195,6 @@ npm run dev
 
 Go to http://localhost:3000/ to view the application.
 
-
 ### Run the tests
 
 #### 1. Run the backend tests
@@ -208,9 +203,15 @@ From the **backend** directory, run:
 
 ```bash
 python manage.py test --pattern="tests.py"
-
 ```
 
+#### 2. Run the frontend tests
+
+From the **frontend** directory, run:
+
+```bash
+npm run test
+```
 
 ### Add data to the application
 
@@ -259,7 +260,6 @@ To modify the logo in the application, make changes in the `frontend/src/layout/
 #### Changing Buttons in the Hero Section
 
 To modify the two buttons in the Hero section, make changes in the `frontend/src/components/HeroButtons.js` file.
-
 
 ### Copyright and License
 
