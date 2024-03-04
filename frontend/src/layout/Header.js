@@ -95,7 +95,7 @@ const Header = ({ onSidebarOpen }) => {
               orientation='vertical'
               sx={{
                 height: 32,
-                mx: 2,
+                marginX: 2,
                 display: { lg: 'flex', md: 'none', xs: 'none' },
               }}
             />
