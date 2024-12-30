@@ -7,6 +7,9 @@ import IconButton from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import { alpha, useTheme } from '@mui/material/styles';
+
+// Material Icons
 import DevicesIcon from '@mui/icons-material/DevicesOutlined';
 import EmailIcon from '@mui/icons-material/EmailOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -18,7 +21,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ListIcon from '@mui/icons-material/FormatListBulleted';
 import MenuIcon from '@mui/icons-material/Menu';
 import TextIcon from '@mui/icons-material/TextSmsOutlined';
-import { alpha, useTheme } from '@mui/material/styles';
 
 import CustomButton from '../components/CustomButton';
 
