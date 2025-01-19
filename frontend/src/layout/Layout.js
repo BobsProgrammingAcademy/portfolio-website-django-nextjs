@@ -2,12 +2,14 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import NoSsr from '@mui/material/NoSsr';
 import Zoom from '@mui/material/Zoom';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { useTheme } from '@mui/material/styles';
+
+// Material Icons
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 import Header from './Header';
 import Footer from './Footer';
