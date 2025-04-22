@@ -12,6 +12,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
+// Material Icons
 import TextIcon from '@mui/icons-material/TextSmsOutlined';
 
 axios.defaults.xsrfCookieName = 'csrftoken';
