@@ -24,6 +24,7 @@ import ListIcon from '@mui/icons-material/FormatListBulleted';
 import MenuIcon from '@mui/icons-material/Menu';
 import TextIcon from '@mui/icons-material/TextSmsOutlined';
 
+// Components
 import CustomButton from '../components/CustomButton';
 
 const Header = ({ onSidebarOpen }) => {
