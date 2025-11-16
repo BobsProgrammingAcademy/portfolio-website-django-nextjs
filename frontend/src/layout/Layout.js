@@ -13,6 +13,7 @@ import { useTheme } from '@mui/material/styles';
 // Material Icons
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
+// Components
 import Header from './Header';
 import Footer from './Footer';
 import Sidebar from './Sidebar';
