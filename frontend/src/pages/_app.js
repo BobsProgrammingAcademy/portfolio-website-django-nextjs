@@ -8,6 +8,7 @@ import { CacheProvider } from '@emotion/react';
 
 import 'aos/dist/aos.css';
 
+// Components
 import theme from '../theme/theme';
 import createEmotionCache from '../utils/createEmotionCache';
 import Layout from '../layout/Layout';
