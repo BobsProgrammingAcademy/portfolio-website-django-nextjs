@@ -2,6 +2,7 @@ import axios from 'axios';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
+// Components
 import About from '../components/About';
 
 const renderApp = () => {
