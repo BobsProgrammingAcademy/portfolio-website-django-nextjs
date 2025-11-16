@@ -21,6 +21,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ListIcon from '@mui/icons-material/FormatListBulleted';
 import TextIcon from '@mui/icons-material/TextSmsOutlined';
 
+// Components
 import CustomButton from '../components/CustomButton';
 
 const Sidebar = ({ open, onClose }) => {
